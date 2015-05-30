@@ -12,7 +12,7 @@
 
     <nav class="header--nav">
         <ul class="header--nav--list">
-            <li class="header--nav--list--item"><a href="index.php">Home</a></li>
+            <li class="header--nav--list--item"><a href="?location=home">Home</a></li>
             <li class="header--nav--list--item"><a href="https://Github.com/UncleDozer">My Github</a></li>
         </ul>
     </nav>

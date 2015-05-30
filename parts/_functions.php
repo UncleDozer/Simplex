@@ -79,3 +79,16 @@ function jsLink( $jsFiles ) {
         echo $link;
     }
 }
+
+/**
+ * Set $location
+ *
+ */
+function getLocation() {
+    if ( isset( $_GET[ 'location' ] ) ) {
+        $location = $_GET[ 'location' ];
+    } else {
+        $location = "home";
+    }
+    return $location;
+}

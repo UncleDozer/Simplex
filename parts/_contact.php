@@ -1,7 +1,6 @@
 <?php
 
 function contact(  ) {
-    /* if ( isset( $_REQUEST['submit'] ) ) { */
         $message = $_REQUEST['message'];
         $from = $_REQUEST['name'];
         $fromMail = $_REQUEST['email'];
@@ -13,7 +12,6 @@ function contact(  ) {
         $message = "$fromMail\n" . $message;
         mail( $toEmail, $subject, $message, $headers );
         header( $_SERVER[ 'SERVERNAME' ] );
-    /* } */
 }
 
 ?>
