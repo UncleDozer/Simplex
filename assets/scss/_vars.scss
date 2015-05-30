@@ -1,0 +1,64 @@
+/* *----------------------------------------{{{
+ * Author    : Kristopher Watts
+ * Email     : kristopher.a.watts@gmail.com
+ * Website   : http://Webtastic-Development.net
+ * Github    : https://github.com/uncledozer
+ * License   : GNU (See License.MD for Details)
+ * Copywrite : 2015
+ * *----------------------------------------}}}
+ */
+
+/* *----------------------------------------
+ * BREAKPOINTS{{{
+ * *----------------------------------------
+ *
+ * Use min-device-width for Ios devices
+ * *------------------------
+ *
+ * $smartphone-landscape : (min-device-width: 321px);
+ * $smartphone-portrait  : (max-device-width: 320px);
+ * $tablet-landscape     : (min-device-width: 768px);
+ * $tablet-portrait      : (max-device-width: 769px);
+ * $desktop              : (min-width: 1224px);
+ * $desktop-large        : (min-width: 1824px);
+ * @include breakpoint(breakpointname){
+ *   Styles
+ * }
+ */
+
+@mixin breakpoint($point){
+    @if $point == breakpoint{
+        @media (min-width: pointwidth){ @content; }
+    }
+}
+
+/* }}}
+ *----------------------------------------
+ */
+
+
+/* *----------------------------------------
+ * MIXINS{{{
+ * *----------------------------------------
+ */
+
+// Fonts
+// Sans-Serif Body Font Stack
+@mixin body-font_stack($weight:$body-weight, $size:$body-size){
+    font-family : $content-font_family;
+    font-size   : $size;
+    font-weight : $weight;
+    font-style  : normal;
+    line-height : 2.7rem;
+}
+
+// Header Font Stack
+@mixin header-font_stack($weight:$header-weight, $size:$h1-size){
+    font-size   : $size;
+    font-style  : normal;
+    line-height : $size;
+}
+
+/* }}}
+ * *----------------------------------------
+ */

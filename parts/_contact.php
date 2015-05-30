@@ -5,7 +5,7 @@ function contact(  ) {
         $message = $_REQUEST['message'];
         $from = $_REQUEST['name'];
         $fromMail = $_REQUEST['email'];
-        $to = "Kristopher.A.Watts@gmail.com";
+        $to = $GLOBALS['email'];
         $mailSubject = "Message from Webtastic-Development.net";
         $headers = "From: $from <$fromMail>";
         $subject = "$mailSubject";
