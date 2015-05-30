@@ -3,13 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    <Kristopher Watts> -- <Lead Developer> -- <Kristopher.A.Watts@gmail.com>
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, PHP, SCSS
+    Apache Server Configs, Parsedown
